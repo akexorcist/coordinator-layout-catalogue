@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_top_sticky">Top Sticky</string>
+    <string name="description_top_sticky">Stick collapsible toolbar to the top of the screen</string>
+</resources>

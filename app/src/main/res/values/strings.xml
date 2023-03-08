@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Coordinator Layout Catalogue</string>
+
+    <string name="open">Open</string>
+    <string name="title_source_repository">Looking for example code?</string>
+    <string name="description_source_repository">This project is open source on GitHub</string>
+</resources>

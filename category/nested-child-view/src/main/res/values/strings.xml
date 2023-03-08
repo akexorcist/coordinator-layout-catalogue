@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_nested_child_view">Nested Child View</string>
+    <string name="description_nested_child_view">Content in nested child view</string>
+</resources>

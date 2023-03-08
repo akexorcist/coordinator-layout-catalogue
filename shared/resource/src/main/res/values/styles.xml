@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text.Sample.Title" parent="@style/TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Sample.Content" parent="@style/TextAppearance.MaterialComponents.Body1" />
+
+    <style name="Text.Sample.List" parent="@style/TextAppearance.MaterialComponents.Body1" />
+</resources>

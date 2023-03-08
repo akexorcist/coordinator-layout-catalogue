@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_stacked">Stacked Title Content</string>
+    <string name="description_stacked">Additional view on title which stick to top of the screen even collapsed</string>
+    <string name="subtitle_stacked">This content will stick to the top of the screen even collapsed</string>
+    <string name="collapsible_subtitle_stacked">This content will stick to scrolling and hiding when collapsed</string>
+    <string name="subtitle_button_stacked">Button</string>
+</resources>

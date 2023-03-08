@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_motion_layout">Motion Layout</string>
+    <string name="description_motion_layout">Animate expanding and collapsing transition with motion layout</string>
+    <string name="subtitle_button_motion_layout">Button</string>
+    <string name="note_motion_layout">`android:minHeight` is a key</string>
+    <string name="follow">Follow</string>
+</resources>
