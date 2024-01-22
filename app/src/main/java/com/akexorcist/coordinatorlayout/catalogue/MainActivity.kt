@@ -11,6 +11,7 @@ import com.akexorcist.coordinatorlayout.catalogue.list.MenuAdapter
 import com.akexorcist.coordinatorlayout.category.fragment.FragmentContentActivity
 import com.akexorcist.coordinatorlayout.category.shared.resource.ContentListActivity
 import com.akexorcist.coordinatorlayout.category.shared.resource.ScrollableContentActivity
+import com.akexorcist.coordinatorlayout.category.viewpager.ViewPagerActivity
 
 class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy {
@@ -81,6 +82,12 @@ class MainActivity : AppCompatActivity() {
             target = ScrollableContentActivity::class.java,
         ),
         Menu(
+            title = getString(com.akexorcist.coordinatorlayout.category.viewpager.R.string.title_view_pager),
+            description = getString(com.akexorcist.coordinatorlayout.category.viewpager.R.string.description_view_pager),
+            layoutResourceId = com.akexorcist.coordinatorlayout.category.viewpager.R.layout.activity_view_pager,
+            target = ViewPagerActivity::class.java,
+        ),
+        Menu(
             title = getString(R.string.title_source_repository),
             description = getString(R.string.description_source_repository),
             layoutResourceId = 0,
@@ -97,6 +104,11 @@ class MainActivity : AppCompatActivity() {
             )
             FragmentContentActivity::class.java -> {
                 FragmentContentActivity.newIntent(
+                    context = this
+                )
+            }
+            ViewPagerActivity::class.java -> {
+                ViewPagerActivity.newIntent(
                     context = this
                 )
             }

@@ -55,5 +55,6 @@ dependencies {
     implementation project(path: ':category:nested-child-view')
     implementation project(path: ':category:fragment')
     implementation project(path: ':category:motion-layout')
+    implementation project(path: ':category:view-pager')
     implementation project(path: ':shared:resource')
 }

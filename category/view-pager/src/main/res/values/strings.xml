@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_view_pager">View Pager</string>
+    <string name="description_view_pager">Scrollable content inside View Pager</string>
+    <string name="view_pager_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum eleifend neque, quis semper quam venenatis volutpat. Donec in cursus mauris, sit amet commodo leo.</string>
+</resources>
