@@ -2,4 +2,4 @@
 
 Example of coordinator layout implementation in different condition
 
-[example.mp4](public%2Fexample.mp4)
+![example.mp4](public/example.mp4)
