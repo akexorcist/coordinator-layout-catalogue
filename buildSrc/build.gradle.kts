@@ -9,8 +9,8 @@ plugins {
 }
 
 dependencies {
-    implementation("com.android.tools.build:gradle:9.2.0")
-    implementation("org.jetbrains.kotlin.android:org.jetbrains.kotlin.android.gradle.plugin:2.4.0")
+    implementation(libs.android.gradle.plugin)
+    implementation(libs.kotlin.gradle.plugin)
 }
 
 gradlePlugin {
