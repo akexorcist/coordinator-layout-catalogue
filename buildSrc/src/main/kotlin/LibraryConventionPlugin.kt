@@ -1,4 +1,4 @@
-import com.android.build.gradle.LibraryExtension
+import com.android.build.api.dsl.LibraryExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -7,6 +7,7 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.withType
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 class LibraryConventionPlugin : Plugin<Project> {
@@ -14,7 +15,6 @@ class LibraryConventionPlugin : Plugin<Project> {
         with(target) {
             with(pluginManager) {
                 apply("com.android.library")
-                apply("org.jetbrains.kotlin.android")
             }
 
             extensions.configure<LibraryExtension> {
@@ -43,18 +43,18 @@ class LibraryConventionPlugin : Plugin<Project> {
             }
 
             tasks.withType<KotlinCompile>().configureEach {
-                kotlinOptions {
-                    jvmTarget = "17"
+                compilerOptions {
+                    jvmTarget.set(JvmTarget.JVM_17)
                 }
             }
 
             dependencies {
-                implementation("androidx.core:core-ktx:1.12.0")
-                implementation("androidx.appcompat:appcompat:1.6.1")
-                implementation("com.google.android.material:material:1.11.0")
+                implementation("androidx.core:core-ktx:1.19.0")
+                implementation("androidx.appcompat:appcompat:1.7.1")
+                implementation("com.google.android.material:material:1.12.0")
                 testImplementation("junit:junit:4.13.2")
-                androidTestImplementation("androidx.test.ext:junit:1.1.5")
-                androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+                androidTestImplementation("androidx.test.ext:junit:1.3.0")
+                androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
                 implementation(project(":shared:resource"))
             }
